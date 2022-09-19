@@ -62,6 +62,10 @@ namespace OOPtest160922
             Console.WriteLine($"SNO {_sno}, name {_name }, går på {_semester}.semester");
         }
 
+        public int  NextSemester() 
+        {
+            return Semester + 1; 
+        }
 
     }
 }

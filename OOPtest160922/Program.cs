@@ -26,4 +26,7 @@ Console.WriteLine(aStudentName1);
 poul.PrintAllStudentInfo();
 anders.PrintAllStudentInfo();
 
+Console.WriteLine(poul.NextSemester());
+
+int kommendesemesterPoul = poul.NextSemester();
 Console.ReadLine();
