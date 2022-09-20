@@ -61,5 +61,10 @@ namespace OOPtest160922
             _weight = weight;
         }
 
+        public void PrintAllInfo()
+        {
+            Console.WriteLine($"Navn {_name } højde { _height} vægt {_weight}  BMI {BMI } ");
+        }
+
     }
 }
