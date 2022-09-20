@@ -4,6 +4,8 @@
 using OOPtest160922;
 
 
+Human h1 =
+
 //new student kalder en constructor - anvendes til at initialisere objektet
 Student poul = new Student(100, "POUL HENRIKSEN", 1);//Objektet skabes 
 //Lægger værdien på højresiden ind i propertien
