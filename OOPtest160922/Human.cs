@@ -11,8 +11,12 @@ namespace OOPtest160922
         private string _name;
 
         public string Name { 
-            get { return _name; } 
-            set { 
+            get 
+            { 
+                return _name; 
+            } 
+            set 
+            { 
                 _name = value; 
             } 
         }

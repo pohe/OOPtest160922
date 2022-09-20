@@ -8,7 +8,8 @@ using OOPtest160922;
 Student poul = new Student(100, "POUL HENRIKSEN", 1);//Objektet skabes 
 //Lægger værdien på højresiden ind i propertien
 // og gemmer den i instance variablen
-//poul.Name = "POUL HENRIKSEN";
+poul.Name = "POUL FREDERIK HENRIKSEN";
+Console.WriteLine("NAvnet er " + poul.Name);
 poul.Sno = 99;
 //poul.Semester = 1;
 Student anders=new Student(101, "ANDERS JENSEN", 1);

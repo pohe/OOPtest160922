@@ -20,8 +20,9 @@ namespace OOPtest160922
             get { //Anvendes når der skal aflæses en værdi
                 return _name; 
             }
-            set { //ANvendes når der skal tildeles en værdi
-                _name = value; 
+            set
+            { //ANvendes når der skal tildeles en værdi
+                _name = value;
             }
         }
 
