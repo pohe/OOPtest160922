@@ -4,7 +4,9 @@
 using OOPtest160922;
 
 
-Human h1 =
+Human h1 = new Human("Jens", 75, 180);
+
+Console.WriteLine("Jens BMI " +   h1.BMI);
 
 //new student kalder en constructor - anvendes til at initialisere objektet
 Student poul = new Student(100, "POUL HENRIKSEN", 1);//Objektet skabes 
