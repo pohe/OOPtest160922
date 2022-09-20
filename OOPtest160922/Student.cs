@@ -68,5 +68,10 @@ namespace OOPtest160922
             return Semester + 1; 
         }
 
+        public override string ToString()
+        {
+            return $"SNO {_sno}, name {_name}, går på {_semester}.semester";
+        }
+
     }
 }

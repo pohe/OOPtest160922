@@ -6,8 +6,8 @@ using OOPtest160922;
 
 Human h1 = new Human("Jens", 75, 180);
 
-Console.WriteLine("Jens BMI " +   h1.BMI);
-
+//Console.WriteLine("Jens BMI " +   h1.BMI);
+h1.PrintAllInfo();
 
 
 //new student kalder en constructor - anvendes til at initialisere objektet

@@ -66,5 +66,10 @@ namespace OOPtest160922
             Console.WriteLine($"Navn {_name } højde { _height} vægt {_weight}  BMI {BMI } ");
         }
 
+        public override string ToString()
+        {
+            return $"Navn {_name} højde {_height} vægt {_weight}  BMI {BMI} ";
+        }
+
     }
 }
