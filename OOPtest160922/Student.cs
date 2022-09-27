@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,18 @@ namespace OOPtest160922
         private string _name;
         private int _sno;
         private int _semester;
+
+        private static int _counter = 0;
+        private int _sId;
+
+        public int SId
+        {
+            get { return _sId; }
+            set { _sId = value; }
+        }
+
+
+        private const int tax = 25; 
 
         //Properties - bruger til at tilgå vores instance variabler
         public string Name
@@ -52,6 +65,8 @@ namespace OOPtest160922
         // en speciel metode til at initialisere et objekt
         public Student( int sno, string name, int semester  )
         {
+            _counter = _counter + 1;
+            _sId = _counter;
             _sno = sno;
             _name = name;
             _semester = semester;
