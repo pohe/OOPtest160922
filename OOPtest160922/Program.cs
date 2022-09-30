@@ -11,6 +11,10 @@ h1.PrintAllInfo();
 
 Console.WriteLine( h1 );
 
+int tal1 = 20;
+
+string tekst = "Dette er en tekst";
+
 
 //new student kalder en constructor - anvendes til at initialisere objektet
 Student poul = new Student(100, "POUL HENRIKSEN", 1, "po@g.dk", "vej 123");//Objektet skabes
@@ -20,6 +24,9 @@ Console.WriteLine($"Pouls sid {poul.SId}");
 poul.Name = "POUL FREDERIK HENRIKSEN";
 Console.WriteLine("NAvnet er " + poul.Name);
 poul.Sno = 99;
+
+poul = null;
+poul = new Student(200, "POUL Petersen", 1, null, "vej 123");//Objektet skabes
 //poul.Semester = 1;
 Student anders=new Student(101, "ANDERS JENSEN", 1, "an@g.dk", "gade 1234");
 Console.WriteLine($"Anders sid {anders.SId} address {anders.Address}");
@@ -55,8 +62,10 @@ int kommendesemesterPoul = poul.NextSemester();
 
 int myResult = Calculator.Add(10, 15);
 Console.WriteLine($"Adding 10 + 25 = {myResult}");
-Console.WriteLine($"Subtracting 10 - 25 = {Calculator.Subtract(10,25)}");
+Console.WriteLine($"Subtracting 10 - 25 = {Calculator.Subtract(10, 25)}");
 
+//Calculator calculator = new Calculator();
+//int result = calculator.Add(12, 34);
 
 
 Console.ReadLine();
