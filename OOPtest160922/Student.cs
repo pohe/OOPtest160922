@@ -12,6 +12,7 @@ namespace OOPtest160922
         //Instance variabler gemmer værdier over lang tid
         //private betyder at det kun kan tilgåes inde fra klassen
         private string _name;
+
         private int _sno;
         private int _semester;
 
@@ -24,6 +25,9 @@ namespace OOPtest160922
             set { _sId = value; }
         }
 
+
+        public string Email { get; set; }
+        public string Address { get; private set; }
 
         private const int tax = 25; 
 
@@ -63,13 +67,15 @@ namespace OOPtest160922
 
         //Constructor
         // en speciel metode til at initialisere et objekt
-        public Student( int sno, string name, int semester  )
+        public Student( int sno, string name, int semester, string email, string address )
         {
             _counter = _counter + 1;
             _sId = _counter;
             _sno = sno;
             _name = name;
             _semester = semester;
+            Email = email;
+            Address = address;
         }
 
         //metoder

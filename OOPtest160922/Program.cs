@@ -13,7 +13,7 @@ Console.WriteLine( h1 );
 
 
 //new student kalder en constructor - anvendes til at initialisere objektet
-Student poul = new Student(100, "POUL HENRIKSEN", 1);//Objektet skabes
+Student poul = new Student(100, "POUL HENRIKSEN", 1, "po@g.dk", "vej 123");//Objektet skabes
 Console.WriteLine($"Pouls sid {poul.SId}");                                                
 //Lægger værdien på højresiden ind i propertien
 // og gemmer den i instance variablen
@@ -21,8 +21,12 @@ poul.Name = "POUL FREDERIK HENRIKSEN";
 Console.WriteLine("NAvnet er " + poul.Name);
 poul.Sno = 99;
 //poul.Semester = 1;
-Student anders=new Student(101, "ANDERS JENSEN", 1);
-Console.WriteLine($"Anders sid {anders.SId}");
+Student anders=new Student(101, "ANDERS JENSEN", 1, "an@g.dk", "gade 1234");
+Console.WriteLine($"Anders sid {anders.SId} address {anders.Address}");
+
+
+Console.WriteLine($"Anders' email {anders.Email}");
+anders.Email = "ab@gmail.com";
 
 anders.Name = "ANDERS FIBIGER JENSEN";
 //anders.Sno = 101;
